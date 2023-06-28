@@ -7,9 +7,9 @@
       </div>
     </div>
     <div class="mt-3">THE WEDDING OF</div>
-    <div class="font-smg text-5xl my-4">Riza & Sarah</div>
+    <div class="font-smg text-5xl my-4">Riza & Dwi</div>
     <div class="">Kepada Bapak/Ibu/Saudara/I</div>
-    <div class="text-secondary text-xl my-4 font-bold">Keluarga Besar UKM-POLICY</div>
+    <div class="text-secondary text-xl my-4 font-bold">Keluarga Besar</div>
     <a href="" class="text-primary bg-white mx-auto rounded-full w-48 px-6 py-3 shadow-lg mt-2 inline-block">
       <!-- <i class="fa fa-fw fa-book-open"></i>  -->
       <Icon name="fa6-solid:book-open" class="relative mr-1" style="bottom:1px" />
