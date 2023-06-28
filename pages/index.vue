@@ -1,7 +1,7 @@
 <template>
   <div class="m-auto bg-primary h-screen text-center text-white flex flex-col justify-center align-center" style="max-width: 425px;">
-    <div class="flex justify-center relative">
-      <img src="/images/border.png" class="absolute" alt="" style="width:13.5rem;top:-27px;left:90px">
+    <div class="flex justify-center relative w-fit mx-auto">
+      <img src="/images/border.png" class="absolute" alt="">
       <div class="w-40 h-40 overflow-hidden rounded-full">
         <img src="/images/prewed.jpeg" alt="">
       </div>
@@ -17,3 +17,12 @@
     </a>
   </div>
 </template>
+
+<style scoped>
+img {
+  max-width: none;
+  width:13.5rem;
+  top:-27px;
+  right: -15px;
+}
+</style>
