@@ -17,6 +17,7 @@
     "tailwindcss": "^3.3.2"
   },
   "dependencies": {
-    "nuxt-icon": "^0.4.1"
+    "nuxt-icon": "^0.4.1",
+    "vue-router": "^4.2.2"
   }
 }
