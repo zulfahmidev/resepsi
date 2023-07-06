@@ -78,7 +78,7 @@
           <div class="font-smg">Pukul 10.00 WIB s/d 14.00 WIB</div>
           <div class="font-smg mt-2">Alamat:</div>
           <div class="font-smg">Jalan Malikussaleh, Dusun Tp. Aceh, Keude Geudong Kecamatan Samudera, Aceh Utara</div>
-          <a href="" class="text-primary bg-white mx-auto rounded-full px-6 py-3 shadow-lg mt-2 inline-block">
+          <a href="https://goo.gl/maps/3CDCecZMzAKPjCbX7" target="_blank" rel="noopener noreferrer" class="text-primary bg-white mx-auto rounded-full px-6 py-3 shadow-lg mt-2 inline-block">
             <Icon name="fa6-solid:map" class="relative mr-1" style="bottom:1px" />
             Buka Di Google Map
           </a>
@@ -94,7 +94,7 @@
 
             <div class="w-full border-b my-5 border-black/25"></div>
 
-            <div class="rounded bg-white py-3 mt-3 px-4 text-left border-l-4 border-secondary" v-for="(v, i) in comments" :key="i">
+            <div class="rounded bg-white py-3 mt-3 px-4 text-left border-l-4 border-secondary" v-for="(v, i) in comments.slice(0, limit)" :key="i">
               <div class="font-smg font-bold mb-1 capitalize">{{ v.name }}</div>
               <div class="text-black/75 text-sm">{{ v.comment }}</div>
               <!-- <div class="text-black/75 mt-2" style="font-size:10px">
@@ -102,12 +102,18 @@
                 1 Hari yang lalu.
               </div> -->
             </div>
-            <!-- <button class="w-full py-2 mt-3 border-2 border-primary rounded active:bg-primary text-primary active:text-white" @click="loadMore">Muat lebih banyak</button> -->
+            <button v-if="limit < comments.length" class="w-full py-2 mt-3 border-2 border-primary rounded active:bg-primary text-primary active:text-white" @click="loadMore">Muat lebih banyak</button>
           </div>
           <div class="rounded-t-3xl mt-5 bg-slate-950 text-sm text-primary py-4">
             Copyright &copy;2023, Created by <a class="font-bold" href="https://zulfahmidev.github.io">Zulfahmidev</a>.
           </div>
         </div>
+      </div>
+    </div>
+    <div :class="`fixed w-full`" :style="`max-width: 425px;bottom: ${10 + (70 * (i+1))}px`" v-for="(v, i) in toats" :key="i">
+      <div id="toast-simple" class="flex animate-bounce items-center mx-auto w-full max-w-xs p-4 space-x-4 text-gray-500 bg-white divide-x divide-gray-200 rounded-lg shadow" role="alert">
+        <Icon :name="v.icon_name" class="text-green-600 active:text-blue-800" />
+        <div class="pl-4 text-sm font-normal">{{ v.caption }}</div>
       </div>
     </div>
   </div>
@@ -126,7 +132,8 @@ export default {
       comments: [],
       name: '',
       comment: '',
-      lastVisible: null
+      limit: 2,
+      toats: []
     }
   },
   methods: {
@@ -144,30 +151,18 @@ export default {
       })
       this.name = '';
       this.comment = '';
+      this.pushToast('fa6-solid:check', 'Ucapan berhasil terkirim.')
     },
     async loadMore() {
-      let q = query(
-        this.getCollection(),
-        orderBy('DESC'), // Change 'createdAt' to your actual field to order by
-        startAt(0),
-      );
-
-      if (this.lastVisible) {
-        // If there is a lastVisible document, start querying after it
-        q = startAfter(this.lastVisible);
-      }
-
-      const snapshot = await getDocs(q);
-      const newComments = snapshot.docs.map((doc) => ({
-        id: doc.id,
-        ...doc.data(),
-      }));
-
-      this.comments = [...this.comments, ...newComments];
-
-      // Update the lastVisible document for the next pagination query
-      this.lastVisible = snapshot.docs[snapshot.docs.length - 1];
-      console.log(q)
+      this.limit += 2
+    },
+    pushToast(icon_name, caption) {
+      this.toats.push({
+        icon_name, caption
+      })
+      setTimeout(() => {
+        this.toats.shift()
+      }, 3000);
     },
   },
   mounted() {
@@ -193,10 +188,6 @@ export default {
     }, 1000);
 
     this.comments = useCollection(this.getCollection())
-    // this.loadMore()
-    
-    // console.log(this.db)
-    // const someTodo = useDocument(doc(collection(db, 'todos'), 'someId'))
   }
 }
 </script>
