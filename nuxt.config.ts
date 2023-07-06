@@ -29,7 +29,7 @@ export default defineNuxtConfig({
     },
     auth: true,
     admin: {
-      serviceAccount: 'credentials.json',
+      serviceAccount: '~/assets/credentials.json',
     },
   }
 })
