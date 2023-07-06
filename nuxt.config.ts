@@ -30,7 +30,7 @@ export default defineNuxtConfig({
     },
     auth: true,
     appCheck: {
-      debug: process.env.NODE_ENV !== 'production',
+      debug: true,
       isTokenAutoRefreshEnabled: true,
       provider: 'ReCaptchaV3',
       key: '6LdpKvcmAAAAALq9ljJT2oDl-VeBbjzdrlsI8fYq',
