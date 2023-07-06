@@ -3,7 +3,7 @@
     <div class="flex justify-center relative w-fit mx-auto">
       <img src="/images/border.png" class="absolute" alt="">
       <div class="w-40 h-40 overflow-hidden rounded-full">
-        <img src="/images/prewed.jpeg" alt="">
+        <img src="/images/prewed.jpg" alt="">
       </div>
     </div>
     <div class="mt-3">THE WEDDING OF</div>
