@@ -2,8 +2,10 @@
   <div class="m-auto bg-primary text-center flex flex-col justify-center align-center" style="max-width: 425px;">
     <div class="h-screen relative" id="header">
       <div class="bg-black/50 h-screen flex flex-col justify-center">
-        <div class="text-white">THE WEDDING OF</div>
-        <div class="text-white font-smgi text-5xl my-3">Riza & Dwi</div>
+        <div class="relative bottom-16">
+          <div class="text-white">THE WEDDING OF</div>
+          <div class="text-white font-smgi text-5xl my-3">Rizza & Dwi</div>
+        </div>
         <div class="absolute w-full h-fit bottom-0">
           <img src="/images/wave.png" class="w-full" alt="">
         </div>
@@ -22,28 +24,28 @@
       <div class="flex justify-center relative w-fit mx-auto">
         <img src="/images/border.png" class="absolute frame-w" alt="">
         <div class="w-28 h-28 overflow-hidden rounded-full">
-          <img src="/images/prewed.jpeg" alt="">
+          <img src="/images/rizza.png" alt="">
         </div>
       </div>
-      <div class="font-smgi my-3 text-2xl text-secondary">Teuku Riza Muli</div>
+      <div class="font-smgi my-3 text-2xl text-secondary">Teuku Rizza Muly S.I.Kom</div>
       <div class="text-sm">
         <div class="font-smg">Putra pertama dari</div>
-        <div class="font-smg">Bapak nama</div>
-        <div class="font-smg">& Ibu nama</div>
+        <div class="font-smg">Bapak Drh. Muzakir Anwar</div>
+        <div class="font-smg">& Ibu Cut Rihanna S.PD</div>
       </div>
     </div>
     <div class="rounded-2xl mt-4 shadow-lg mx-4 bg-light relative py-10 text-black">
       <div class="flex justify-center relative w-fit mx-auto">
         <img src="/images/border.png" class="absolute frame-w" alt="">
         <div class="w-28 h-28 overflow-hidden rounded-full">
-          <img src="/images/prewed.jpeg" alt="">
+          <img src="/images/dwi.png" alt="">
         </div>
       </div>
-      <div class="font-smgi my-3 text-2xl text-secondary">Dwi</div>
+      <div class="font-smgi my-3 text-2xl text-secondary">Dwi Ninda Safania</div>
       <div class="text-sm">
         <div class="font-smg">Putri pertama dari</div>
-        <div class="font-smg">Bapak nama</div>
-        <div class="font-smg">& Ibu nama</div>
+        <div class="font-smg">Bapak M. Yusuf</div>
+        <div class="font-smg">& Ibu Yusniar</div>
       </div>
     </div>
     <div class="mt-4" id="highligh">
@@ -52,58 +54,55 @@
         <div class="text-white mt-10 font-smg text-2xl">Menuju Hari Bahagia</div>
         <div class="flex gap-3 justify-center my-8">
           <div class="rounded-xl text-white w-20 py-2 h-25 bg-white/50">
-            <div class="text-4xl">0</div>
+            <div class="text-4xl" id="day">0</div>
             <div class="text-sm font-smg">Hari</div>
           </div>
           <div class="rounded-xl text-white w-20 py-2 h-25 bg-white/50">
-            <div class="text-4xl">0</div>
-            <div class="text-sm font-smg">Hari</div>
+            <div class="text-4xl" id="hour">0</div>
+            <div class="text-sm font-smg">Jam</div>
           </div>
           <div class="rounded-xl text-white w-20 py-2 h-25 bg-white/50">
-            <div class="text-4xl">0</div>
-            <div class="text-sm font-smg">Hari</div>
+            <div class="text-4xl" id="minute">0</div>
+            <div class="text-sm font-smg">Menit</div>
           </div>
           <div class="rounded-xl text-white w-20 py-2 h-25 bg-white/50">
-            <div class="text-4xl">0</div>
-            <div class="text-sm font-smg">Hari</div>
+            <div class="text-4xl" id="second">0</div>
+            <div class="text-sm font-smg">Detik</div>
           </div>
         </div>
         <div class="rounded-2xl mt-4 shadow-lg mx-4 relative py-10 text-black" id="agenda">
-          <div class="font-smgi my-3 text-3xl text-black">Resepsi</div>
-          <div class="font-smg">Minggu</div>
-          <div class="font-smg text-primary text-7xl">16</div>
+          <div class="font-smgi my-3 text-3xl text-black">Resepsi Pernikahan</div>
+          <div class="font-smg">Sabtu</div>
+          <div class="font-smg text-primary text-7xl">22</div>
           <div class="font-smg text-primary">Juli 2023</div>
-          <div class="font-smg">Pukul 08.00 WIB s/d Selesai</div>
+          <div class="font-smg">Pukul 10.00 WIB s/d 14.00 WIB</div>
+          <div class="font-smg mt-2">Alamat:</div>
+          <div class="font-smg">Jalan Malikussaleh, Dusun Tp. Aceh, Keude Geudong Kecamatan Samudera, Aceh Utara</div>
           <a href="" class="text-primary bg-white mx-auto rounded-full px-6 py-3 shadow-lg mt-2 inline-block">
             <Icon name="fa6-solid:map" class="relative mr-1" style="bottom:1px" />
-            Buka Google Map
+            Buka Di Google Map
           </a>
         </div>
         <div class="rounded-t-3xl mt-5 bg-light">
           <div class="mx-4 pt-10">
             <div class="text-5xl font-smgi">Wishes</div>
             <div class="text-sm mt-2 mb-5 font-smg">Berikan Ucapan & Doa Restu</div>
-            <input type="text" placeholder="Nama" class="w-full outline-none px-3 py-2 rounded border-b-2 border-secondary focus:shadow-md mt-2">
-            <textarea cols="30" rows="2" placeholder="Ucapan" class="w-full outline-none px-3 py-2 rounded border-b-2 border-secondary focus:shadow-md mt-2 overflow-hidden resize-none" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></textarea>
-            <button class="w-full py-2 bg-primary rounded text-white active:bg-secondary">Kirim</button>
+            <input type="text" placeholder="Nama" class="w-full outline-none px-3 py-2 rounded border-b-2 border-secondary focus:shadow-md mt-2" v-model="name" min="3" max="18">
+
+            <textarea cols="30" minlength="10" maxlength="200" rows="2" v-model="comment" placeholder="Ucapan" class="w-full outline-none px-3 py-2 rounded border-b-2 border-secondary focus:shadow-md mt-2 overflow-hidden resize-none" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></textarea>
+            <button class="w-full py-2 bg-primary rounded text-white active:bg-secondary" @click="add">Kirim</button>
+
             <div class="w-full border-b my-5 border-black/25"></div>
 
-            <div class="rounded bg-white py-3 mt-3 px-4 text-left border-l-4 border-secondary">
-              <div class="font-smg font-bold mb-1">Zulfahmi</div>
-              <div class="text-black/75 text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, sunt?</div>
-              <div class="text-black/75 mt-2" style="font-size:10px">
+            <div class="rounded bg-white py-3 mt-3 px-4 text-left border-l-4 border-secondary" v-for="(v, i) in comments" :key="i">
+              <div class="font-smg font-bold mb-1 capitalize">{{ v.name }}</div>
+              <div class="text-black/75 text-sm">{{ v.comment }}</div>
+              <!-- <div class="text-black/75 mt-2" style="font-size:10px">
                 <Icon name="fa6-regular:clock" class="relative" style="bottom:1px;margin-right: 3px;" />
                 1 Hari yang lalu.
-              </div>
+              </div> -->
             </div>
-            <div class="rounded bg-white py-3 mt-3 px-4 text-left border-l-4 border-secondary">
-              <div class="font-smg font-bold mb-1">Zulfahmi</div>
-              <div class="text-black/75 text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, sunt?</div>
-              <div class="text-black/75 mt-2" style="font-size:10px">
-                <Icon name="fa6-regular:clock" class="relative" style="bottom:1px;margin-right: 3px;" />
-                1 Hari yang lalu.
-              </div>
-            </div>
+            <!-- <button class="w-full py-2 mt-3 border-2 border-primary rounded active:bg-primary text-primary active:text-white" @click="loadMore">Muat lebih banyak</button> -->
           </div>
           <div class="rounded-t-3xl mt-5 bg-slate-950 text-sm text-primary py-4">
             Copyright &copy;2023, Created by <a class="font-bold" href="https://zulfahmidev.github.io">Zulfahmidev</a>.
@@ -114,6 +113,95 @@
   </div>
 </template>
 
+<script>
+import { useCollection, useFirestore, useDocument } from 'vuefire'
+import { collection, addDoc, query, orderBy, limit, startAfter, getDocs } from 'firebase/firestore'
+import { startAt } from 'firebase/database';
+// import * as Swal from 'nuxt-sweetalert2'
+
+export default {
+  data() {
+    return {
+      db: useFirestore(),
+      comments: [],
+      name: '',
+      comment: '',
+      lastVisible: null
+    }
+  },
+  methods: {
+    getCollection() {
+      return collection(this.db, 'comments');
+    },
+    async add() {
+      if (this.name.trim() == '' || this.comment.trim() == '') {
+        return false;
+      }
+      await addDoc(this.getCollection(), {
+        name: this.name,
+        comment: this.comment,
+        createdAt: new Date().getTime()
+      })
+      this.name = '';
+      this.comment = '';
+    },
+    async loadMore() {
+      let q = query(
+        this.getCollection(),
+        orderBy('DESC'), // Change 'createdAt' to your actual field to order by
+        startAt(0),
+      );
+
+      if (this.lastVisible) {
+        // If there is a lastVisible document, start querying after it
+        q = startAfter(this.lastVisible);
+      }
+
+      const snapshot = await getDocs(q);
+      const newComments = snapshot.docs.map((doc) => ({
+        id: doc.id,
+        ...doc.data(),
+      }));
+
+      this.comments = [...this.comments, ...newComments];
+
+      // Update the lastVisible document for the next pagination query
+      this.lastVisible = snapshot.docs[snapshot.docs.length - 1];
+      console.log(q)
+    },
+  },
+  mounted() {
+    let endDate = new Date('July 22 2023 08:00:00').getTime();
+    setInterval(() => {
+      var now = new Date().getTime()
+      let remainingTime = endDate - now;
+      const second = 1000;
+      const minute = second * 60;
+      const hour = minute * 60;
+      const day = hour * 24;
+
+      let daysLeft = Math.trunc(remainingTime / day);
+      let hoursLeft = Math.trunc((remainingTime % day) / hour);
+      let minutesLeft = Math.trunc((remainingTime % hour) / minute);
+      let secondsLeft = Math.trunc((remainingTime % minute) / second);
+
+      document.querySelector('#day').innerHTML = daysLeft;
+      document.querySelector('#hour').innerHTML = hoursLeft;
+      document.querySelector('#minute').innerHTML = minutesLeft;
+      document.querySelector('#second').innerHTML = secondsLeft;
+
+    }, 1000);
+
+    this.comments = useCollection(this.getCollection())
+    // this.loadMore()
+    
+    // console.log(this.db)
+    // const someTodo = useDocument(doc(collection(db, 'todos'), 'someId'))
+  }
+}
+</script>
+
+
 <style scoped>
 .frame-w {
   max-width: none;
@@ -123,13 +211,13 @@
   position: absolute;
 }
 #header {
-  background-image: url(/images/prewed.jpeg);
+  background-image: url(/images/prewed.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
 #highligh {
-  background-image: url(/images/prewed.jpeg);
+  background-image: url(/images/prewed.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
