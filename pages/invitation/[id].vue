@@ -2,8 +2,8 @@
   <div class="m-auto bg-primary h-screen text-center text-white flex flex-col justify-center align-center" style="max-width: 425px;">
     <div class="flex justify-center relative w-fit mx-auto">
       <img src="/images/border.png" class="absolute" alt="">
-      <div class="w-40 h-40 overflow-hidden rounded-full">
-        <img src="/images/prewed.jpg" alt="">
+      <div class="w-40 h-40 rounded-full overflow-hidden">
+        <img src="/images/cover.png" alt="" style="width: 10rem;">
       </div>
     </div>
     <div class="mt-3">THE WEDDING OF</div>

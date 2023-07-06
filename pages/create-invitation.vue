@@ -37,7 +37,7 @@
       <div class="flex bg-white border-b" v-for="(v, i) in invitations" :key="i">
         <div class="h-10 w-10 flex bro justify-center items-center">{{ i+1 }}</div>
         <div class="h-10 w-full flex px-2 items-center">{{ v.name }} </div>
-        <div class="h-10 w-24 mr-0 mx-auto  flex justify-center items-center" @click="copy(v.id)">
+        <div class="h-10 w-24 mr-0 mx-auto  flex justify-center items-center" @click="copy(v)">
           <Icon name="fa6-solid:copy" class="text-blue-600 active:text-blue-800" />
         </div>
         <div class="h-10 w-24 mr-0 mx-auto flex justify-center items-center" @click="del(v.id)">
@@ -98,18 +98,18 @@ export default {
         this.toats.shift()
       }, 3000);
     },
-    copy(id) {
+    copy(v) {
       navigator.clipboard.writeText(`Assalamu'alaikum Warahmatullahi Wabarakatuh.
 
 Maha suci Allah yang telah menjadikan segala sesuatu lebih indah dan sempurna.
 
-Izinkan kami mengundang Bapak/Ibu/Sahabat sekalian untuk dapat menghadiri acara pernikahan kami.
+Izinkan kami mengundang Bapak/Ibu/Sahabat ${v.name} untuk dapat menghadiri acara pernikahan kami.
 
-Link undangan : https://resepsi.vercel.app/invitation/${id} 
+Link undangan : https://resepsi.vercel.app/invitation/${v.id} 
 
 Note:
 ”Copy link kemudian paste di Chrome atau Browser lain jika tidak bisa dibuka”
-”Untuk tampilan terbaik, silahkan akses melalui browser Chrome / Safari dan Non-Aktifkan DarkMode / Mode Gelap.”
+”Untuk tampilan terbaik, silahkan akses melalui browser Chrome atau Safari.”
 
 Kehadiran, doa dan restu anda semua adalah kado terindah bagi kami. Tiada yang dapat kami ungkapkan selain rasa terima kasih dari hati yang tulus dan dalam.
 

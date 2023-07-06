@@ -132,7 +132,7 @@ export default {
       comments: [],
       name: '',
       comment: '',
-      limit: 2,
+      limit: 5,
       toats: []
     }
   },
@@ -154,7 +154,7 @@ export default {
       this.pushToast('fa6-solid:check', 'Ucapan berhasil terkirim.')
     },
     async loadMore() {
-      this.limit += 2
+      this.limit += 5
     },
     pushToast(icon_name, caption) {
       this.toats.push({
