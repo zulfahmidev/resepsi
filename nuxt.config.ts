@@ -21,7 +21,6 @@ export default defineNuxtConfig({
     config: {
       apiKey: "AIzaSyCOaXugL9WnyjMkDyKj486wOfVl2PlRWug",
       authDomain: "my-project-43b9a.firebaseapp.com",
-      // databaseURL: "https://my-project-43b9a-default-rtdb.asia-southeast1.firebasedatabase.app",
       projectId: "my-project-43b9a",
       storageBucket: "my-project-43b9a.appspot.com",
       messagingSenderId: "986173143036",
@@ -29,11 +28,8 @@ export default defineNuxtConfig({
       measurementId: "G-CTLZDVDKWC",
     },
     auth: true,
-    appCheck: {
-      debug: true,
-      isTokenAutoRefreshEnabled: true,
-      provider: 'ReCaptchaV3',
-      key: '6LdpKvcmAAAAALq9ljJT2oDl-VeBbjzdrlsI8fYq',
+    admin: {
+      serviceAccount: 'credentials.json',
     },
   }
 })
