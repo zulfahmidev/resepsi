@@ -117,7 +117,7 @@
       </div>
     </div>
     <!-- <div id="audio"></div> -->
-    <audio controls autoplay loop>
+    <audio controls autoplay muted>
       <!-- <source src="horse.ogg" type="audio/ogg"> -->
       <source src="/lagu.mp3" type="audio/mpeg">
       Your browser does not support the audio element.
@@ -199,14 +199,19 @@ export default {
     // let a = new Audio('/lagu.mp3')
     // a.play();
 
-    let el = document.createElement('audio');
-    el.src = '/lagu.mp3';
-    el.autoplay = true;
-    el.loop = true;
-    el.muted = true;
+    // let el = document.createElement('audio');
+    // el.src = '/lagu.mp3';
+    // el.autoplay = true;
+    // el.loop = true;
+    // el.muted = true;
     // el.play();
+    document.onscroll = () => {
+      document.querySelector('audio').muted = false;
+      // if (document.querySelector('audio')) {
+      //   document.querySelector('audio').play();
+      // }
+    }
     setTimeout(() => {
-      document.querySelector('audio').play()
     }, 1000);
   }
 }
