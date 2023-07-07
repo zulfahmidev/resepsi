@@ -105,7 +105,7 @@ Maha suci Allah yang telah menjadikan segala sesuatu lebih indah dan sempurna.
 
 Izinkan kami mengundang Bapak/Ibu/Sahabat ${v.name} untuk dapat menghadiri acara pernikahan kami.
 
-Link undangan : https://resepsi.vercel.app/invitation/${v.id} 
+Link undangan : https://resepsi-rizzadandwi.vercel.app/invitation/${v.id} 
 
 Note:
 ”Copy link kemudian paste di Chrome atau Browser lain jika tidak bisa dibuka”

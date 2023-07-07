@@ -116,6 +116,13 @@
         <div class="pl-4 text-sm font-normal">{{ v.caption }}</div>
       </div>
     </div>
+    <!-- <div id="audio"></div> -->
+    <audio controls autoplay loop>
+      <!-- <source src="horse.ogg" type="audio/ogg"> -->
+      <source src="/lagu.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <!-- <iframe src="/lagu.mp3" allow="autoplay" id="audio" hidden ></iframe> -->
   </div>
 </template>
 
@@ -188,6 +195,19 @@ export default {
     }, 1000);
 
     this.comments = useCollection(this.getCollection())
+
+    // let a = new Audio('/lagu.mp3')
+    // a.play();
+
+    let el = document.createElement('audio');
+    el.src = '/lagu.mp3';
+    el.autoplay = true;
+    el.loop = true;
+    el.muted = true;
+    // el.play();
+    setTimeout(() => {
+      document.querySelector('audio').play()
+    }, 1000);
   }
 }
 </script>
@@ -202,13 +222,13 @@ export default {
   position: absolute;
 }
 #header {
-  background-image: url(/images/prewed.jpg);
+  background-image: url(/images/nikah.JPG);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
 #highligh {
-  background-image: url(/images/prewed.jpg);
+  background-image: url(/images/nikah.JPG);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
