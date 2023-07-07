@@ -41,7 +41,7 @@
         <div class="flex justify-center relative w-fit mx-auto">
           <img src="/images/border.png" class="absolute frame-w" alt="">
           <div class="w-28 h-28 overflow-hidden rounded-full">
-            <img src="/images/rizza.png" alt="">
+            <img src="/images/rizza.jpeg" alt="">
           </div>
         </div>
         <div class="font-smgi my-3 text-2xl text-secondary">Teuku Rizza Muly S.I.Kom</div>
@@ -55,7 +55,7 @@
         <div class="flex justify-center relative w-fit mx-auto">
           <img src="/images/border.png" class="absolute frame-w" alt="">
           <div class="w-28 h-28 overflow-hidden rounded-full">
-            <img src="/images/dwi.png" alt="">
+            <img src="/images/dwi.jpeg" alt="">
           </div>
         </div>
         <div class="font-smgi my-3 text-2xl text-secondary">Dwi Ninda Safania</div>
@@ -122,7 +122,7 @@
               <button v-if="limit < comments.length" class="w-full py-2 mt-3 border-2 border-primary rounded active:bg-primary text-primary active:text-white" @click="loadMore">Muat lebih banyak</button>
             </div>
             <div class="rounded-t-3xl mt-5 bg-slate-950 text-sm text-primary py-4">
-              Copyright &copy;2023, Created by <a class="font-bold" href="https://zulfahmidev.github.io">Zulfahmidev</a>.
+              Copyright &copy;2023, Created by <a class="font-bold" href="https://zulfahmidev.com">Zulfahmidev</a>.
             </div>
           </div>
         </div>
