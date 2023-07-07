@@ -4,7 +4,7 @@
       <div class="flex justify-center relative w-fit mx-auto">
         <img src="/images/border.png" class="absolute avatar" alt="">
         <div class="w-40 h-40 rounded-full overflow-hidden">
-          <img src="/images/avatar.png" alt="" style="width: 10rem;">
+          <img src="/images/avatar.jpeg" alt="" style="width: 10rem;">
         </div>
       </div>
       <div class="mt-3">THE WEDDING OF</div>
@@ -16,7 +16,7 @@
         Buka Undangan
       </div>
     </div>
-    <div id="invitation" class="m-auto bg-primary text-center flex flex-col justify-center align-center" style="max-width: 425px;display: none;">
+    <div id="invitation" class="m-auto bg-primary text-center flex flex-col justify-center align-center" style="max-width: 425px;">
       <div class="h-screen relative" id="header">
         <div class="bg-black/50 h-screen flex flex-col justify-center">
           <div class="relative bottom-16">
@@ -163,7 +163,7 @@ export default {
     openInvitation() {
       document.querySelector('#lagu').play();
       document.querySelector('#cover').classList.add('page-leave-to');
-      document.querySelector('#invitation').style.display = 'flex';
+      window.scrollTo(0, 0);
       setTimeout(() => {
         document.querySelector('#cover').style.display = 'none';
       }, 500);
@@ -240,13 +240,13 @@ export default {
   position: absolute;
 }
 #header {
-  background-image: url(/images/nikah.JPG);
+  background-image: url(/images/nikah.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
 #highligh {
-  background-image: url(/images/nikah.JPG);
+  background-image: url(/images/nikah.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
