@@ -100,6 +100,14 @@
               Buka Di Google Map
             </a>
           </div>
+          <div class="rounded-2xl mt-4 shadow-lg mx-4 relative p-5 text-black" id="card">
+            <div class="font-smgi my-3 text-3xl text-black">Cashless Gift</div>
+            <img src="/images/card.png" class="w-full shadow-xl">
+            <div class="text-primary bg-white mx-auto rounded-full px-6 py-3 shadow-lg mt-2 inline-block active:shadow-sm cursor-pointer" @click="copyNumber">
+              <Icon name="fa6-solid:copy" class="relative mr-1" style="bottom:1px" />
+              Salin Nomor
+            </div>
+          </div>
           <div class="rounded-t-3xl mt-5 bg-light">
             <div class="mx-4 pt-10">
               <div class="text-5xl font-smgi">Wishes</div>
@@ -187,6 +195,10 @@ export default {
     async loadMore() {
       this.limit += 5
     },
+    copyNumber() {
+      navigator.clipboard.writeText('1052721907');
+      this.pushToast('fa6-solid:check', 'Number successfully copied.')
+    },
     pushToast(icon_name, caption) {
       this.toats.push({
         icon_name, caption
@@ -251,7 +263,7 @@ export default {
   background-size: cover;
   background-position: center center;
 }
-#agenda {
+#agenda, #card {
   background-image: url(/images/bg.png);
   background-repeat: no-repeat;
   background-size: cover;
