@@ -223,10 +223,10 @@ export default {
       let minutesLeft = Math.trunc((remainingTime % hour) / minute);
       let secondsLeft = Math.trunc((remainingTime % minute) / second);
 
-      document.querySelector('#day').innerHTML = daysLeft;
-      document.querySelector('#hour').innerHTML = hoursLeft;
-      document.querySelector('#minute').innerHTML = minutesLeft;
-      document.querySelector('#second').innerHTML = secondsLeft;
+      document.querySelector('#day').innerHTML = 0;
+      document.querySelector('#hour').innerHTML = 0;
+      document.querySelector('#minute').innerHTML = 0;
+      document.querySelector('#second').innerHTML = 0;
 
     }, 1000);
 
